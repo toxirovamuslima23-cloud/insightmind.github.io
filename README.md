@@ -1,0 +1,1 @@
+# insightmind.github.io
