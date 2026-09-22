@@ -1,4 +1,5 @@
-Bismillah <!DOCTYPE html>
+Bismillah ```html
+<!DOCTYPE html>
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
@@ -31,9 +32,81 @@ Bismillah <!DOCTYPE html>
         body {
             margin: 0;
             font-family: Georgia, "Times New Roman", serif;
-             background: #EAF6FB;
-             color: #263238;
+            background: #EAF6FB;
+            color: #263238;
             line-height: 1.7;
+        }
+
+
+        /* =========================
+           WELCOME BOX
+        ========================= */
+
+        .welcome-box {
+            max-width: 500px;
+            margin: 50px auto 20px;
+            padding: 35px 25px;
+            text-align: center;
+            background: #e8f7ff;
+            border: 1px solid #b9e6f7;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(70, 170, 210, 0.15);
+        }
+
+        .welcome-box h2 {
+            color: #2186a8;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .welcome-box p {
+            color: #52717d;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-box input {
+            width: 80%;
+            max-width: 300px;
+            padding: 12px 15px;
+            border: 1px solid #9ed9eb;
+            border-radius: 12px;
+            outline: none;
+            font-size: 15px;
+            margin-bottom: 12px;
+            font-family: inherit;
+        }
+
+        .welcome-box input:focus {
+            border-color: #55b8d6;
+        }
+
+        .welcome-box button {
+            display: block;
+            margin: 5px auto 0;
+            padding: 11px 28px;
+            border: none;
+            border-radius: 12px;
+            background: #55b8d6;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .welcome-box button:hover {
+            background: #3ca5c6;
+        }
+
+        .hello-box {
+            max-width: 500px;
+            margin: 50px auto 20px;
+            padding: 30px;
+            text-align: center;
+            background: #e8f7ff;
+            color: #2186a8;
+            border-radius: 20px;
+            font-size: 24px;
         }
 
 
@@ -316,6 +389,14 @@ Bismillah <!DOCTYPE html>
                 padding: 50px 10px;
             }
 
+            .welcome-box {
+                margin: 30px 20px 10px;
+            }
+
+            .hello-box {
+                margin: 30px 20px 10px;
+            }
+
         }
 
     </style>
@@ -323,6 +404,33 @@ Bismillah <!DOCTYPE html>
 
 
 <body>
+
+
+<!-- =========================
+     WELCOME
+========================= -->
+
+<div id="welcomeBox" class="welcome-box">
+
+    <h2>Assalomu Alaykum, Insight Mind'ga xush kelibsiz!</h2>
+
+    <p>Iltimos, ismingizni yozing 😊</p>
+
+    <input
+        type="text"
+        id="nameInput"
+        placeholder="Ismingiz"
+    >
+
+    <button onclick="saveName()">
+        Kirish
+    </button>
+
+</div>
+
+
+<div id="helloBox" class="hello-box" style="display: none;"></div>
+
 
 
 <!-- =========================
@@ -520,5 +628,57 @@ Bismillah <!DOCTYPE html>
 </footer>
 
 
+
+<!-- =========================
+     NAME SCRIPT
+========================= -->
+
+<script>
+
+function saveName() {
+
+    const name = document
+        .getElementById("nameInput")
+        .value
+        .trim();
+
+    if (name === "") {
+
+        alert("Iltimos, ismingizni yozing 😊");
+
+        return;
+    }
+
+    localStorage.setItem("visitorName", name);
+
+    document.getElementById("welcomeBox").style.display = "none";
+
+    document.getElementById("helloBox").style.display = "block";
+
+    document.getElementById("helloBox").innerHTML =
+        "Salom, " + name + " 🌿";
+}
+
+
+window.onload = function() {
+
+    const savedName = localStorage.getItem("visitorName");
+
+    if (savedName) {
+
+        document.getElementById("welcomeBox").style.display = "none";
+
+        document.getElementById("helloBox").style.display = "block";
+
+        document.getElementById("helloBox").innerHTML =
+            "Salom, " + savedName + " 🌿";
+    }
+
+};
+
+</script>
+
+
 </body>
 </html>
+```
