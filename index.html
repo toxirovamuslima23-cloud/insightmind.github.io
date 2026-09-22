@@ -10,6 +10,7 @@
     <meta name="description" content="Insight Mind — stories, psychology, medicine, neuroscience and thoughts.">
 
     <style>
+
         * {
             box-sizing: border-box;
         }
@@ -21,12 +22,15 @@
         body {
             margin: 0;
             font-family: Georgia, "Times New Roman", serif;
-            background: #f8f7f4;
-            color: #222;
+            background: #F4FAFC;
+            color: #263238;
             line-height: 1.7;
         }
 
-        /* HEADER */
+
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
             max-width: 1200px;
@@ -42,7 +46,7 @@
             font-weight: bold;
             letter-spacing: 1px;
             text-decoration: none;
-            color: #222;
+            color: #263238;
         }
 
         nav {
@@ -52,17 +56,19 @@
 
         nav a {
             text-decoration: none;
-            color: #555;
+            color: #527583;
             font-size: 15px;
             transition: 0.3s;
         }
 
         nav a:hover {
-            color: #000;
+            color: #3F8199;
         }
 
 
-        /* HERO */
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
             max-width: 1000px;
@@ -77,27 +83,32 @@
             margin: 0 0 25px;
             font-weight: normal;
             letter-spacing: -2px;
+            color: #263238;
         }
 
         .hero p {
             max-width: 650px;
             margin: auto;
-            color: #666;
+            color: #718792;
             font-size: 19px;
         }
 
 
-        /* DIVIDER */
+        /* =========================
+           DIVIDER
+        ========================= */
 
         .divider {
             width: 60px;
-            height: 1px;
-            background: #bbb;
+            height: 2px;
+            background: #9CC9DA;
             margin: 35px auto;
         }
 
 
-        /* MAIN */
+        /* =========================
+           MAIN
+        ========================= */
 
         main {
             max-width: 1000px;
@@ -106,19 +117,21 @@
         }
 
         .section-title {
-            font-size: 14px;
+            font-size: 13px;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #777;
+            color: #6D8995;
             margin-bottom: 30px;
         }
 
 
-        /* FEATURED ARTICLE */
+        /* =========================
+           FEATURED ARTICLE
+        ========================= */
 
         .featured {
-            background: white;
-            border: 1px solid #e4e2de;
+            background: #FFFFFF;
+            border: 1px solid #DCEFF7;
             padding: 55px;
             margin-bottom: 80px;
             transition: 0.3s;
@@ -126,24 +139,25 @@
 
         .featured:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+            box-shadow: 0 12px 30px rgba(90, 150, 170, 0.10);
         }
 
         .category {
             font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: #888;
+            color: #6FAFC5;
         }
 
         .featured h2 {
             font-size: 38px;
             font-weight: normal;
             margin: 15px 0;
+            color: #263238;
         }
 
         .featured p {
-            color: #666;
+            color: #718792;
             max-width: 700px;
             font-size: 17px;
         }
@@ -151,19 +165,22 @@
         .read-more {
             display: inline-block;
             margin-top: 15px;
-            color: #222;
+            color: #4F91A8;
             text-decoration: none;
-            border-bottom: 1px solid #222;
+            border-bottom: 1px solid #8FC3D4;
             padding-bottom: 3px;
             transition: 0.3s;
         }
 
         .read-more:hover {
-            opacity: 0.5;
+            color: #2F6F84;
+            border-color: #2F6F84;
         }
 
 
-        /* CATEGORIES */
+        /* =========================
+           CATEGORIES
+        ========================= */
 
         .categories {
             display: grid;
@@ -173,55 +190,71 @@
         }
 
         .category-card {
-            border-top: 1px solid #ccc;
-            padding: 25px 5px;
+            background: #FFFFFF;
+            border: 1px solid #E0F0F5;
+            padding: 28px 24px;
+            transition: 0.3s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-3px);
+            border-color: #B9DCE8;
+            box-shadow: 0 8px 25px rgba(90, 150, 170, 0.08);
         }
 
         .category-card h3 {
             font-size: 22px;
             font-weight: normal;
             margin: 0 0 8px;
+            color: #385966;
         }
 
         .category-card p {
             margin: 0;
-            color: #777;
+            color: #7A919A;
             font-size: 14px;
         }
 
 
-        /* ABOUT */
+        /* =========================
+           ABOUT
+        ========================= */
 
         .about {
             max-width: 700px;
             margin: auto;
             text-align: center;
             padding: 60px 20px;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #D5E8EF;
         }
 
         .about h2 {
             font-size: 30px;
             font-weight: normal;
+            color: #385966;
         }
 
         .about p {
-            color: #666;
+            color: #718792;
         }
 
 
-        /* FOOTER */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #D5E8EF;
             text-align: center;
             padding: 45px 20px;
-            color: #888;
+            color: #7A919A;
             font-size: 14px;
         }
 
 
-        /* MOBILE */
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 700px) {
 
@@ -267,12 +300,13 @@
 
             .categories {
                 grid-template-columns: 1fr;
-                gap: 10px;
+                gap: 15px;
             }
 
             .about {
                 padding: 50px 10px;
             }
+
         }
 
     </style>
@@ -282,7 +316,9 @@
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -303,7 +339,9 @@
 
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
@@ -320,7 +358,9 @@
 
 
 
-<!-- MAIN CONTENT -->
+<!-- =========================
+     MAIN CONTENT
+========================= -->
 
 <main>
 
@@ -364,52 +404,77 @@
 
     <section class="categories">
 
+
         <div class="category-card">
+
             <h3>Stories</h3>
+
             <p>
                 Hayot, inson va tajribalar haqida hikoyalar.
             </p>
+
         </div>
 
 
+
         <div class="category-card">
+
             <h3>Psychology</h3>
+
             <p>
                 Inson xulqi, his-tuyg'ular va ong haqida.
             </p>
+
         </div>
 
 
+
         <div class="category-card">
+
             <h3>Medicine</h3>
+
             <p>
                 Tibbiyot, sog'liq va ilmiy bilimlar.
             </p>
+
         </div>
 
 
+
         <div class="category-card">
+
             <h3>Neuroscience</h3>
+
             <p>
                 Miya, asab tizimi va inson tafakkuri haqida.
             </p>
+
         </div>
 
 
+
         <div class="category-card">
+
             <h3>Thoughts</h3>
+
             <p>
                 Hayot va inson haqida shaxsiy mulohazalar.
             </p>
+
         </div>
+
 
 
         <div class="category-card">
+
             <h3>Books</h3>
+
             <p>
                 Kitoblar, g'oyalar va o'qishdan qolgan fikrlar.
             </p>
+
         </div>
+
 
     </section>
 
@@ -435,7 +500,9 @@
 
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
