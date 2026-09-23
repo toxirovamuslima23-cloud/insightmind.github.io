@@ -6,20 +6,7 @@ Bismillah <!DOCTYPE html>
 
     <title>Insight Mind — Stories, Thoughts & Science</title>
 
-    <meta name="description" content="Insight Mind — stories, psychology, medicine, neuroscience and thoughts.">
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNJZTF7ZJS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-ZNJZTF7ZJS');
-    </script>
-
     <style>
-
         * {
             box-sizing: border-box;
         }
@@ -30,803 +17,536 @@ Bismillah <!DOCTYPE html>
 
         body {
             margin: 0;
-            font-family: Georgia, "Times New Roman", serif;
+            font-family: Arial, Helvetica, sans-serif;
             background: #EAF6FB;
-            color: #263238;
+            color: #23404A;
             line-height: 1.7;
         }
 
-
-        /* =========================
-           WELCOME
-        ========================= */
-
-        .welcome-box {
-            max-width: 520px;
-            margin: 45px auto 25px;
-            padding: 40px 30px;
-            text-align: center;
-
-            background: #F4FBFE;
-            border: 1px solid #C9E8F2;
-            border-radius: 22px;
-
-            box-shadow: 0 10px 30px rgba(70, 170, 210, 0.12);
-        }
-
-        .welcome-box h2 {
-            color: #2186A8;
-            font-size: 25px;
-            font-weight: normal;
-            margin: 0 0 15px;
-        }
-
-        .welcome-box p {
-            color: #607D87;
-            font-size: 16px;
-            margin-bottom: 22px;
-        }
-
-        .welcome-box input {
-            width: 80%;
-            max-width: 300px;
-
-            padding: 13px 16px;
-
-            border: 1px solid #A9D9E8;
-            border-radius: 12px;
-
-            outline: none;
-            font-size: 15px;
-            font-family: inherit;
-
-            background: #FFFFFF;
-        }
-
-        .welcome-box input:focus {
-            border-color: #55B8D6;
-            box-shadow: 0 0 0 3px rgba(85, 184, 214, 0.12);
-        }
-
-        .welcome-box button {
-            display: block;
-
-            margin: 12px auto 0;
-
-            padding: 11px 30px;
-
-            border: none;
-            border-radius: 12px;
-
-            background: #55B8D6;
-            color: white;
-
-            font-size: 15px;
-            font-family: inherit;
-
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .welcome-box button:hover {
-            background: #3CA5C6;
-            transform: translateY(-2px);
-        }
-
-        .hello-box {
-            max-width: 520px;
-            margin: 45px auto 25px;
-
-            padding: 30px;
-
-            text-align: center;
-
-            background: #F4FBFE;
-            color: #2186A8;
-
-            border: 1px solid #C9E8F2;
-            border-radius: 22px;
-
-            font-size: 24px;
-
-            box-shadow: 0 10px 30px rgba(70, 170, 210, 0.12);
-        }
-
-
-        /* =========================
-           HEADER
-        ========================= */
+        /* HEADER */
 
         header {
+            background: #F4FBFE;
+            border-bottom: 1px solid #CDEAF3;
+            padding: 18px 7%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
             max-width: 1200px;
             margin: auto;
-            padding: 28px 40px;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo {
-            font-size: 25px;
+            font-size: 24px;
             font-weight: bold;
-            letter-spacing: 1px;
-
-            text-decoration: none;
-
             color: #2186A8;
+            text-decoration: none;
         }
 
-        nav {
+        .nav-links {
             display: flex;
             gap: 28px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
         }
 
-        nav a {
+        .nav-links a {
             text-decoration: none;
-            color: #527583;
+            color: #4F7180;
             font-size: 15px;
-
             transition: 0.3s;
         }
 
-        nav a:hover {
+        .nav-links a:hover {
             color: #2186A8;
         }
 
+        /* WELCOME */
 
-        /* =========================
-           HERO
-        ========================= */
+        .welcome-box {
+            max-width: 1200px;
+            margin: 25px auto 0;
+            padding: 0 7%;
+        }
+
+        .welcome-box p {
+            color: #4F7180;
+            font-size: 14px;
+        }
+
+        /* HERO */
 
         .hero {
-            max-width: 1000px;
-
-            margin: 0 auto;
-
-            padding: 100px 30px 100px;
-
+            max-width: 1200px;
+            margin: 70px auto;
+            padding: 0 7%;
             text-align: center;
         }
 
         .hero h1 {
-            font-size: clamp(48px, 8vw, 86px);
-
-            line-height: 1.05;
-
-            margin: 0 0 25px;
-
-            font-weight: normal;
-
-            letter-spacing: -2px;
-
+            font-size: 48px;
             color: #2186A8;
+            margin-bottom: 15px;
         }
 
         .hero p {
-            max-width: 650px;
-
+            max-width: 700px;
             margin: auto;
-
-            color: #718792;
-
-            font-size: 19px;
+            color: #55727D;
+            font-size: 18px;
         }
 
+        /* SECTION */
 
-        /* =========================
-           DIVIDER
-        ========================= */
-
-        .divider {
-            width: 65px;
-            height: 2px;
-
-            background: #72C2DC;
-
-            margin: 35px auto;
-        }
-
-
-        /* =========================
-           MAIN
-        ========================= */
-
-        main {
-            max-width: 1000px;
-
-            margin: auto;
-
-            padding: 0 30px 100px;
+        section {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 7%;
         }
 
         .section-title {
-            font-size: 13px;
-
-            text-transform: uppercase;
-
-            letter-spacing: 2px;
-
-            color: #4F91A8;
-
-            margin-bottom: 25px;
+            font-size: 30px;
+            color: #2186A8;
+            margin-bottom: 30px;
         }
 
-
-        /* =========================
-           FEATURED ARTICLE
-        ========================= */
+        /* FEATURED ARTICLE */
 
         .featured {
             background: #F4FBFE;
-
-            border: 1px solid #C9E8F2;
-
-            padding: 55px;
-
-            margin-bottom: 80px;
-
-            border-radius: 18px;
-
+            border: 1px solid #D3EDF4;
+            border-radius: 22px;
+            padding: 35px;
             transition: 0.3s;
-
-            box-shadow: 0 8px 25px rgba(70, 170, 210, 0.07);
         }
 
         .featured:hover {
             transform: translateY(-4px);
-
-            box-shadow:
-                0 15px 35px rgba(70, 170, 210, 0.13);
-
-            border-color: #A9D9E8;
+            box-shadow: 0 10px 30px rgba(33, 134, 168, 0.08);
         }
 
-        .category {
-            font-size: 12px;
-
+        .featured-category {
+            color: #55A9C3;
+            font-size: 14px;
+            font-weight: bold;
             text-transform: uppercase;
-
-            letter-spacing: 2px;
-
-            color: #55A9C2;
+            letter-spacing: 1px;
         }
 
-        .featured h2 {
-            font-size: 38px;
-
-            font-weight: normal;
-
-            margin: 15px 0;
-
-            color: #2186A8;
+        .featured h3 {
+            font-size: 30px;
+            margin: 12px 0;
+            color: #23404A;
         }
 
         .featured p {
-            color: #627F89;
-
-            max-width: 700px;
-
-            font-size: 17px;
+            color: #5D737C;
+            max-width: 800px;
         }
 
         .read-more {
             display: inline-block;
-
-            margin-top: 15px;
-
-            color: #3F91AC;
-
+            margin-top: 12px;
+            color: #2186A8;
             text-decoration: none;
-
-            border-bottom: 1px solid #8FC3D4;
-
-            padding-bottom: 3px;
-
-            transition: 0.3s;
+            font-weight: bold;
         }
 
         .read-more:hover {
-            color: #2186A8;
-
-            border-color: #2186A8;
+            text-decoration: underline;
         }
 
-
-        /* =========================
-           CATEGORIES
-        ========================= */
+        /* CATEGORIES */
 
         .categories {
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
-            gap: 20px;
-
-            margin-bottom: 100px;
+            gap: 22px;
         }
 
         .category-card {
             background: #F4FBFE;
-
-            border: 1px solid #D1EAF2;
-
-            padding: 28px 24px;
-
-            border-radius: 16px;
-
+            border: 1px solid #D3EDF4;
+            border-radius: 18px;
+            padding: 28px;
+            text-decoration: none;
+            display: block;
+            color: inherit;
             transition: 0.3s;
-
-            box-shadow: 0 6px 20px rgba(70, 170, 210, 0.05);
         }
 
         .category-card:hover {
-            transform: translateY(-4px);
-
-            border-color: #A9D9E8;
-
-            box-shadow:
-                0 10px 28px rgba(70, 170, 210, 0.10);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(33, 134, 168, 0.09);
+            border-color: #A9DCE9;
         }
 
         .category-card h3 {
-            font-size: 22px;
-
-            font-weight: normal;
-
-            margin: 0 0 8px;
-
             color: #2186A8;
+            margin-top: 0;
+            margin-bottom: 8px;
         }
 
         .category-card p {
-            margin: 0;
-
-            color: #718792;
-
-            font-size: 14px;
+            color: #617982;
+            margin-bottom: 0;
         }
 
-
-        /* =========================
-           ABOUT
-        ========================= */
+        /* ABOUT */
 
         .about {
-            max-width: 700px;
-
-            margin: auto;
-
-            text-align: center;
-
-            padding: 60px 20px;
-
-            border-top: 1px solid #C9E4ED;
-        }
-
-        .about h2 {
-            font-size: 30px;
-
-            font-weight: normal;
-
-            color: #2186A8;
+            background: #F4FBFE;
+            border: 1px solid #D3EDF4;
+            border-radius: 22px;
+            padding: 35px;
         }
 
         .about p {
-            color: #718792;
+            color: #5D737C;
         }
 
-
-        /* =========================
-           FOOTER
-        ========================= */
+        /* FOOTER */
 
         footer {
-            border-top: 1px solid #C9E4ED;
-
+            margin-top: 100px;
+            background: #DDF1F7;
+            padding: 35px 7%;
             text-align: center;
-
-            padding: 45px 20px;
-
-            color: #6D8995;
-
+            color: #66828D;
             font-size: 14px;
-
-            background: #E4F3F8;
         }
 
+        /* MOBILE */
 
-        /* =========================
-           MOBILE
-        ========================= */
+        @media (max-width: 800px) {
 
-        @media (max-width: 700px) {
-
-            header {
-                padding: 22px 20px;
-
-                flex-direction: column;
-
-                gap: 18px;
+            .nav-links {
+                gap: 12px;
             }
 
-            nav {
-                gap: 15px;
-
-                flex-wrap: wrap;
-
-                justify-content: center;
-            }
-
-            nav a {
+            .nav-links a {
                 font-size: 13px;
             }
 
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .categories {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                margin: 60px auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 15px 5%;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .welcome-box {
+                padding: 0 5%;
+            }
+
             .hero {
-                padding: 75px 20px;
+                padding: 0 5%;
+                margin: 50px auto;
             }
 
             .hero h1 {
-                font-size: 52px;
+                font-size: 32px;
             }
 
             .hero p {
                 font-size: 16px;
             }
 
-            main {
-                padding: 0 20px 70px;
+            section {
+                padding: 0 5%;
             }
 
             .featured {
-                padding: 30px;
+                padding: 25px;
             }
 
-            .featured h2 {
-                font-size: 30px;
+            .featured h3 {
+                font-size: 25px;
             }
-
-            .categories {
-                grid-template-columns: 1fr;
-
-                gap: 15px;
-            }
-
-            .about {
-                padding: 50px 10px;
-            }
-
-            .welcome-box {
-                margin: 30px 20px 15px;
-
-                padding: 30px 20px;
-            }
-
-            .hello-box {
-                margin: 30px 20px 15px;
-            }
-
         }
-
     </style>
 </head>
 
-
 <body>
 
+    <!-- HEADER -->
 
-<!-- =========================
-     WELCOME
-========================= -->
+    <header>
+        <nav>
 
-<div id="welcomeBox" class="welcome-box">
+            <a href="index.html" class="logo">
+                Insight Mind
+            </a>
 
-    <h2>
-        Assalomu Alaykum, Insight Mind'ga xush kelibsiz!
-    </h2>
+            <ul class="nav-links">
 
-    <p>
-        Iltimos, ismingizni yozing 😊
-    </p>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
 
-    <input
-        type="text"
-        id="nameInput"
-        placeholder="Ismingiz"
-    >
+                <li>
+                    <a href="#">
+                        Stories
+                    </a>
+                </li>
 
-    <button onclick="saveName()">
-        Kirish
-    </button>
+                <!-- PSYCHOLOGY ARTICLE LINK -->
+                <li>
+                    <a href="psixologiya.html">
+                        Psychology
+                    </a>
+                </li>
 
-</div>
+                <li>
+                    <a href="#">
+                        Medicine
+                    </a>
+                </li>
 
+                <li>
+                    <a href="#">
+                        Neuroscience
+                    </a>
+                </li>
 
-<div id="helloBox"
-     class="hello-box"
-     style="display: none;">
-</div>
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
 
+            </ul>
 
-
-<!-- =========================
-     HEADER
-========================= -->
-
-<header>
-
-    <a href="index.html" class="logo">
-        Insight Mind
-    </a>
-
-    <nav>
-
-        <a href="index.html">
-            Home
-        </a>
-
-        <a href="#">
-            Stories
-        </a>
-
-        <a href="#">
-            Psychology
-        </a>
-
-        <a href="#">
-            Medicine
-        </a>
-
-        <a href="#">
-            Neuroscience
-        </a>
-
-        <a href="#">
-            About
-        </a>
-
-    </nav>
-
-</header>
+        </nav>
+    </header>
 
 
+    <!-- WELCOME -->
 
-<!-- =========================
-     HERO
-========================= -->
-
-<section class="hero">
-
-    <h1>
-        Insight Mind
-    </h1>
-
-    <div class="divider"></div>
-
-    <p>
-        Stories, thoughts and ideas about the human mind,
-        medicine, neuroscience and the things that make us think.
-    </p>
-
-</section>
-
-
-
-<!-- =========================
-     MAIN CONTENT
-========================= -->
-
-<main>
-
-
-    <!-- LATEST -->
-
-    <div class="section-title">
-        Latest
+    <div class="welcome-box">
+        <p>
+            Welcome to Insight Mind.
+        </p>
     </div>
 
 
-    <article class="featured">
+    <!-- HERO -->
 
-        <div class="category">
-            Thoughts
-        </div>
+    <section class="hero">
 
-        <h2>
-            Yiqilish
-        </h2>
+        <h1>
+            Stories, Thoughts & Science
+        </h1>
 
         <p>
-            Ba'zan inson yiqilgani uchun emas,
-            yiqilgandan keyin o'rnidan qanday turgani uchun o'zgaradi.
+            Psychology, medicine, neuroscience, books and thoughts —
+            explored with curiosity and a little more depth.
         </p>
-
-        <a href="yiqilish.html" class="read-more">
-            Read the story →
-        </a>
-
-    </article>
-
-
-
-    <!-- CATEGORIES -->
-
-    <div class="section-title">
-        Explore
-    </div>
-
-
-    <section class="categories">
-
-
-        <div class="category-card">
-
-            <h3>
-                Stories
-            </h3>
-
-            <p>
-                Hayot, inson va tajribalar haqida hikoyalar.
-            </p>
-
-        </div>
-
-
-
-        <div class="category-card">
-
-            <h3>
-                Psychology
-            </h3>
-
-            <p>
-                Inson xulqi, his-tuyg'ular va ong haqida.
-            </p>
-
-        </div>
-
-
-
-        <div class="category-card">
-
-            <h3>
-                Medicine
-            </h3>
-
-            <p>
-                Tibbiyot, sog'liq va ilmiy bilimlar.
-            </p>
-
-        </div>
-
-
-
-        <div class="category-card">
-
-            <h3>
-                Neuroscience
-            </h3>
-
-            <p>
-                Miya, asab tizimi va inson tafakkuri haqida.
-            </p>
-
-        </div>
-
-
-
-        <div class="category-card">
-
-            <h3>
-                Thoughts
-            </h3>
-
-            <p>
-                Hayot va inson haqida shaxsiy mulohazalar.
-            </p>
-
-        </div>
-
-
-
-        <div class="category-card">
-
-            <h3>
-                Books
-            </h3>
-
-            <p>
-                Kitoblar, g'oyalar va o'qishdan qolgan fikrlar.
-            </p>
-
-        </div>
-
 
     </section>
 
+
+    <!-- LATEST ARTICLE -->
+
+    <section>
+
+        <h2 class="section-title">
+            Latest
+        </h2>
+
+        <div class="featured">
+
+            <div class="featured-category">
+                Thoughts
+            </div>
+
+            <h3>
+                Yiqilish
+            </h3>
+
+            <p>
+                Ba'zan yiqilish — yo'lning tugashi emas,
+                balki boshqa tomonga qarash uchun sabab bo'lishi mumkin.
+            </p>
+
+            <a href="yiqilish.html" class="read-more">
+                Read article →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPLORE -->
+
+    <section>
+
+        <h2 class="section-title">
+            Explore
+        </h2>
+
+        <div class="categories">
+
+            <!-- STORIES -->
+
+            <a href="#" class="category-card">
+
+                <h3>
+                    Stories
+                </h3>
+
+                <p>
+                    Hayot, insonlar va turli hikoyalar haqida.
+                </p>
+
+            </a>
+
+
+            <!-- PSYCHOLOGY -->
+
+            <a href="psixologiya.html" class="category-card">
+
+                <h3>
+                    Psychology
+                </h3>
+
+                <p>
+                    Inson xulqi, his-tuyg'ular va ong haqida.
+                </p>
+
+            </a>
+
+
+            <!-- MEDICINE -->
+
+            <a href="#" class="category-card">
+
+                <h3>
+                    Medicine
+                </h3>
+
+                <p>
+                    Tibbiyot, sog'liq va ilmiy bilimlar haqida.
+                </p>
+
+            </a>
+
+
+            <!-- NEUROSCIENCE -->
+
+            <a href="#" class="category-card">
+
+                <h3>
+                    Neuroscience
+                </h3>
+
+                <p>
+                    Miya, xotira, ong va inson asab tizimi haqida.
+                </p>
+
+            </a>
+
+
+            <!-- THOUGHTS -->
+
+            <a href="yiqilish.html" class="category-card">
+
+                <h3>
+                    Thoughts
+                </h3>
+
+                <p>
+                    Hayot, o'zini anglash va o'ylantiradigan fikrlar.
+                </p>
+
+            </a>
+
+
+            <!-- BOOKS -->
+
+            <a href="#" class="category-card">
+
+                <h3>
+                    Books
+                </h3>
+
+                <p>
+                    Kitoblar, o'qish va ulardan qolgan fikrlar.
+                </p>
+
+            </a>
+
+        </div>
+
+    </section>
 
 
     <!-- ABOUT -->
 
-    <section class="about">
+    <section id="about">
 
-        <h2>
-            A place to pause, think and learn.
+        <h2 class="section-title">
+            About Insight Mind
         </h2>
 
-        <p>
-            Insight Mind — thoughts, stories and science
-            bir joyda uchrashadigan kichik makon.
-        </p>
+        <div class="about">
+
+            <p>
+                Insight Mind — psychology, medicine, neuroscience,
+                books and personal thoughts haqida yoziladigan kichik
+                shaxsiy platforma.
+            </p>
+
+            <p>
+                Bu yerda murakkab mavzularni oddiyroq tushunishga,
+                savollar berishga va ba'zi narsalarga boshqa tomondan
+                qarashga harakat qilaman.
+            </p>
+
+        </div>
 
     </section>
 
 
-</main>
+    <!-- FOOTER -->
 
+    <footer>
 
+        © 2026 Insight Mind
 
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-    © 2026 Insight Mind
-
-</footer>
-
-
-
-<!-- =========================
-     NAME SCRIPT
-========================= -->
-
-<script>
-
-function saveName() {
-
-    const name = document
-        .getElementById("nameInput")
-        .value
-        .trim();
-
-    if (name === "") {
-
-        alert("Iltimos, ismingizni yozing 😊");
-
-        return;
-    }
-
-    localStorage.setItem("visitorName", name);
-
-    document.getElementById("welcomeBox").style.display = "none";
-
-    document.getElementById("helloBox").style.display = "block";
-
-    document.getElementById("helloBox").innerHTML =
-        "Salom, " + name + " 🌿";
-}
-
-
-window.onload = function() {
-
-    const savedName = localStorage.getItem("visitorName");
-
-    if (savedName) {
-
-        document.getElementById("welcomeBox").style.display = "none";
-
-        document.getElementById("helloBox").style.display = "block";
-
-        document.getElementById("helloBox").innerHTML =
-            "Salom, " + savedName + " 🌿";
-    }
-
-};
-
-</script>
+    </footer>
 
 
 </body>
